@@ -5,11 +5,12 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: #ffffff;
+  background: var(--bg);
   transition-duration: 0.25s;
   opacity: 0;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 
   //checkbox hack: shows navigation and menuicon
   &-checkbox {
@@ -43,7 +44,7 @@
   &__item {
     margin: 0.5rem 0;
     padding: 1rem;
-    color: #000000;
+    color: var(--fg);
     font-size: 2.2rem;
     text-decoration: none;
     transition: 0.5s;
@@ -61,6 +62,12 @@
   :last-child {
     margin-right: 0;
   }
+
+  &__separator {
+    margin: 4rem 0;
+    border-top: 0.5rem solid var(--fg);
+    width: 90%;
+  }
 }
 
 //menuicon burger
@@ -75,7 +82,7 @@
     position: absolute;
     height: 0.4rem;
     width: 100%;
-    background: #000000;
+    background: var(--fg);
     transition: 0.25s ease-in-out;
 
     &--top {
