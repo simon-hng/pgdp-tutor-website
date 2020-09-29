@@ -1,0 +1,93 @@
+.menu {
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  transition-duration: 0.25s;
+  opacity: 0;
+  flex-direction: column;
+  text-align: center;
+
+  //checkbox hack: shows navigation and menuicon
+  &-checkbox {
+    &:checked {
+      ~ nav {
+        right: 0;
+        opacity: 0.92;
+      }
+
+      ~ .menuicon {
+        .menuicon__line {
+          &--top {
+            top: 5px;
+            transform: rotate(45deg);
+          }
+
+          &--middle {
+            opacity: 0;
+          }
+
+          &--bottom {
+            top: 5px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  //navigation items
+  &__item {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    color: #000000;
+    font-size: 2.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+      transform: translateY(-5px);
+    }
+
+    &:first-of-type {
+      margin-top: 10rem;
+    }
+  }
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+//menuicon burger
+.menuicon {
+  z-index: 100;
+  position: relative;
+  width: 2.5rem;
+  height: 1.6rem;
+  cursor: pointer;
+
+  &__line {
+    position: absolute;
+    height: 0.4rem;
+    width: 100%;
+    background: #000000;
+    transition: 0.25s ease-in-out;
+
+    &--top {
+      top: 0;
+    }
+
+    &--middle {
+      top: 50%;
+    }
+
+    &--bottom {
+      top: 100%;
+    }
+  }
+}
