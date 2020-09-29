@@ -6,7 +6,7 @@
   --blue: #61afef;
   --magenta: #c678dd;
   --cyan: #56b6c3;
-  --white: #dcdfe5;
+  --white: #fafafa;
 }
 
 .light {
@@ -22,9 +22,9 @@
 }
 
 .pink {
-  --bg: #ffbdf2;
+  --bg: #e887d4;
   --fg: var(--black);
-  --hl: var(--green);
+  --hl: var(--white);
 }
 
 a {

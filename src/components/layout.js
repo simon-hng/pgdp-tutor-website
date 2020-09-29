@@ -17,7 +17,7 @@ const Layout = ({ location, children }) => {
       data-is-root-path={isRootPath}
     >
       <Header themeChange={toggleTheme} />
-      <main>{children}</main>
+      <main className="main">{children}</main>
       <footer className="footer">
         © {new Date().getFullYear()}, Built with
         {` `}

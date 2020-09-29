@@ -1,0 +1,33 @@
+body,
+html {
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4,
+h5 {
+  font-size: 1.8rem;
+}
+p,
+li {
+  font-size: 1.6rem;
+}
+
+blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--fg);
+}

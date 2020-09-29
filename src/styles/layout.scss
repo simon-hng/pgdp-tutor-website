@@ -1,11 +1,14 @@
 .global {
   &-wrapper {
-    margin: 0 auto;
     padding: 4rem 5% 0;
-    max-width: 100rem;
     min-height: 100vh;
     background-color: var(--bg);
     color: var(--fg);
     transition-duration: 0.5s;
   }
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 100rem;
 }
