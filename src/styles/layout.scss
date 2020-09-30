@@ -1,9 +1,11 @@
-.global {
-  &-wrapper {
-    min-height: 100vh;
-    background-color: var(--bg);
-    color: var(--fg);
-    transition-duration: 0.5s;
+.layout {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--fg);
+  transition-duration: 0.5s;
+
+  &__headline {
+    margin-bottom: 5rem;
   }
 }
 

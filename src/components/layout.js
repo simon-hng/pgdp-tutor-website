@@ -12,16 +12,16 @@ const Layout = ({ location, children }) => {
   }
 
   return (
-    <div
-      className={`global-wrapper ${themes[theme]}`}
-      data-is-root-path={isRootPath}
-    >
+    <div className={`layout ${themes[theme]}`} data-is-root-path={isRootPath}>
       <Header themeChange={toggleTheme} />
-      <main className="main">{children}</main>
+      <main className="main">
+        <h1 className="layout__headline">{location.pathname}</h1>
+        {children}
+      </main>
       <footer className="footer">
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Edit me on
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://github.com/simon-hng/pgdp-tutor-website/">GitHub</a>
       </footer>
     </div>
   )

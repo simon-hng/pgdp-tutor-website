@@ -46,4 +46,19 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: easingthemes/ssh-deploy@191986574c0735ffad7ae1a297a414d6e6f95375
         uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          # Private Key
+          SSH_PRIVATE_KEY: ${{ secrets.SSHLXHALLEKEY }}
+          # Remote host
+          REMOTE_HOST: lxhalle.in.tum.de
+          # Remote user
+          REMOTE_USER: huangs
+          # Remote port
+          # REMOTE_PORT: # optional, default is 22
+          # Source directory
+          SOURCE: public/
+          # Target directory
+          TARGET: ~/../home_page/html-data
+          # Arguments to pass to rsync
+          # ARGS: # optional, default is -rltgoDzvO
 ```

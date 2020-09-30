@@ -5,10 +5,13 @@ import Layout from "../components/layout"
 const Contact = ({ location }) => {
   return (
     <Layout location={location}>
-      <h1>Contact</h1>
+      <h2>TODO: styling</h2>
       <ul>
         <li>
           <a href="mailto:simon.huang@tum.de">simon.huang@tum.de</a>
+        </li>
+        <li>
+          <a href="https://github.com/simon-hng/">GitHub</a>
         </li>
       </ul>
     </Layout>
