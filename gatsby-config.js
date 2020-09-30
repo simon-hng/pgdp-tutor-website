@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `~/../home_page/html-data`,
   siteMetadata: {
     title: `TODO`,
     author: {
