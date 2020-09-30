@@ -5,7 +5,7 @@ module.exports = {
       name: `Simon Huang`,
       //summary: `PGDP Tutor 2020 WS`,
     },
-    description: `TODo`,
+    description: `website`,
     //siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
   },
   plugins: [
@@ -48,12 +48,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
+    //   {
+    //     resolve: `gatsby-plugin-google-analytics`,
+    //     options: {
+    //       //trackingId: `ADD YOUR TRACKING ID HERE`,
+    //     },
+    //   },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -70,6 +70,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
