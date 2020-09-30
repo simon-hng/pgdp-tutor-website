@@ -1,13 +1,13 @@
 module.exports = {
   pathPrefix: `~huangs/`,
   siteMetadata: {
-    title: `TODO`,
+    title: `PGDP blog`,
     author: {
       name: `Simon Huang`,
-      //summary: `PGDP Tutor 2020 WS`,
+      summary: `Tutor WS 2020`,
     },
-    description: `website`,
-    //siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Blog for PGDP Tutorium WS 2020`,
+    siteUrl: `https://home.in.tum.de/~huangs`,
   },
   plugins: [
     {
@@ -59,18 +59,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
+        name: `simonhng pgdp tutor blog`,
+        short_name: `pgdp`,
+        start_url: `~huangs/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#0095b6`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
+        theme_color_in_head: false
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
