@@ -2,13 +2,15 @@ import React from "react"
 import Header from "./header"
 
 const themes = ["light", "dark", "pink"]
-let theme = 0
+const lastTheme = localStorage.getItem("colorTheme")
+let theme = lastTheme == null ? 0 : Number(lastTheme)
 
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   const toggleTheme = () => {
     theme = theme < themes.length - 1 ? theme + 1 : 0
+    localStorage.setItem("colorTheme", theme)
   }
 
   return (
