@@ -6,16 +6,14 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const Tags = ({ pageContext, data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
+  const tagHeader = `/tags/${tag} - ${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  } `
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <h1>{tagHeader}</h1>
+    <Layout location={location} title={tagHeader}>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields

@@ -6,7 +6,7 @@ const lastTheme =
   typeof window !== "undefined" && localStorage.getItem("colorTheme")
 let theme = lastTheme == null ? 0 : Number(lastTheme)
 
-const Layout = ({ location, children }) => {
+const Layout = ({ location, children, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   const toggleTheme = () => {
@@ -18,7 +18,7 @@ const Layout = ({ location, children }) => {
     <div className={`layout ${themes[theme]}`} data-is-root-path={isRootPath}>
       <Header themeChange={toggleTheme} />
       <main className="main">
-        <h1 className="layout__headline">{location.pathname}</h1>
+        <h1 className="layout__headline">{title}</h1>
         {children}
       </main>
       <footer className="footer">

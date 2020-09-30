@@ -21,7 +21,7 @@ const TagsPage = ({
   return (
     <div>
       <Helmet title={title} />
-      <Layout location={location} title={title}>
+      <Layout location={location} title="/tags">
         <ul>
           {group.map(tag => (
             <li key={tag.fieldValue}>

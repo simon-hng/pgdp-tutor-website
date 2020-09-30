@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const Contact = ({ location }) => {
   return (
-    <Layout location={location}>
+    <Layout location={location} title="/contact">
       <h2>TODO: styling</h2>
       <ul>
         <li>
