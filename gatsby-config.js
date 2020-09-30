@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `~huangs/../home_page/html-data`,
+  pathPrefix: `~huangs/`,
   siteMetadata: {
     title: `TODO`,
     author: {
