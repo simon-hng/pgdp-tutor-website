@@ -25,7 +25,15 @@ Oh, and here's a great quote from this Wikipedia on
 You can also write code blocks here!
 
 ```js
-const saltyDuckEgg = "chinese preserved food product"
+const saltyDuckEgg = "chinese preserved food product" f
+```
+
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello world! => ligatures?");
+  }
+}
 ```
 
 | Number | Title                                    | Year |
