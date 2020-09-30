@@ -61,7 +61,7 @@ module.exports = {
       options: {
         name: `simonhng pgdp tutor blog`,
         short_name: `pgdp`,
-        start_url: `~huangs/`,
+        start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0095b6`,
         display: `minimal-ui`,
