@@ -3,7 +3,7 @@ module.exports = {
     title: `TODO`,
     author: {
       name: `Simon Huang`,
-      summary: `PGDP Tutor 2020 WS`,
+      //summary: `PGDP Tutor 2020 WS`,
     },
     description: `TODo`,
     //siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
