@@ -66,7 +66,7 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `fullscreen`,
         icon: `content/assets/simomns.svg`,
-        //theme_color_in_head: false
+        theme_color_in_head: false
       },
     },
     `gatsby-plugin-react-helmet`,
