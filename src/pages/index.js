@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import Bio from "../components/bio"
 import SEO from "../components/seo"
@@ -37,9 +38,15 @@ const BlogIndex = ({ data, location }) => {
           >
             <header>
               <h2>
-                <Link to={post.fields.slug} itemProp="url">
+                <AniLink
+                  cover
+                  bg="#0095b6"
+                  direction="left"
+                  to={post.fields.slug}
+                  itemProp="url"
+                >
                   <span itemProp="headline">{title}</span>
-                </Link>
+                </AniLink>
               </h2>
               <small>{post.frontmatter.date}</small>
             </header>
