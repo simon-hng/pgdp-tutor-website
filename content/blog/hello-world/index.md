@@ -2,7 +2,7 @@
 title: HelloWorld.java
 date: "2020-09-30"
 description: "Anatanomy of a HelloWorld program in java"
-tags: ["PGDP"]
+tags: ["PGDP", "Hello World"]
 ---
 
 ```java

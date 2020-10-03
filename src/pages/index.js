@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
               <h2>
                 <AniLink
                   cover
-                  bg="#0095b6"
+                  bg="#c2f4c2"
                   direction="left"
                   to={post.fields.slug}
                   itemProp="url"

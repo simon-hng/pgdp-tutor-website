@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import kebabCase from "lodash/kebabCase"
+
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +11,7 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
+  console.log(post.frontmatter.tags)
 
   return (
     <Layout location={location} title={post.frontmatter.title}>
@@ -17,7 +20,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article itemScope itemType="http://schema.org/Article">
-        <header>
+        <header className="blog-post__header">
+          <ul className="blog-post__tags">
+            {post.frontmatter.tags &&
+              post.frontmatter.tags.map(tag => (
+                <li>
+                  <AniLink
+                    cover
+                    direction="right"
+                    bg="#c2f4f4"
+                    to={`/tags/${kebabCase(tag)}/`}
+                  >
+                    {tag}
+                  </AniLink>
+                </li>
+              ))}
+          </ul>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
@@ -78,6 +96,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
         description
       }

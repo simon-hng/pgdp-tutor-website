@@ -21,7 +21,7 @@ const Tags = ({ pageContext, data, location }) => {
           const { title } = node.frontmatter
           return (
             <li key={slug}>
-              <AniLink cover direction="left" to={slug}>
+              <AniLink bg="#f4c2f4" cover direction="left" to={slug}>
                 {title}
               </AniLink>
             </li>
