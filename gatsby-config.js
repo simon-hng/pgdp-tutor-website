@@ -59,14 +59,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `simonhng pgdp tutor blog`,
-        short_name: `pgdp`,
+        name: `simonhng`,
+        short_name: `simonhng`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#0095b6`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
-        theme_color_in_head: false
+        theme_color: `#ffffff`,
+        display: `fullscreen`,
+        icon: `content/assets/simomns.svg`,
+        //theme_color_in_head: false
       },
     },
     `gatsby-plugin-react-helmet`,
