@@ -11,7 +11,6 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
-  console.log(post.frontmatter.tags)
 
   return (
     <Layout location={location} title={post.frontmatter.title}>
