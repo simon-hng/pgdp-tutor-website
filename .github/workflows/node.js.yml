@@ -44,4 +44,4 @@ jobs:
         # Target directory
         TARGET: ~/../home_page/html-data
         # Arguments to pass to rsync
-        # ARGS: # optional, default is -rltgoDzvO
+        ARGS: -rltgoDzvO --delete
