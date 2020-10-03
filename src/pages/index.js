@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Bio from "../components/bio"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
@@ -23,13 +24,14 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title="/home">
+      <Bio />
       <SEO title="All posts" />
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
           <article
             key={post.fields.slug}
-            className="post-list-item"
+            className="home__post"
             itemScope
             itemType="http://schema.org/Article"
           >

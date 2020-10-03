@@ -4,7 +4,6 @@ module.exports = {
     title: `PGDP blog`,
     author: {
       name: `Simon Huang`,
-      summary: `Tutor WS 2020`,
     },
     description: `Blog for PGDP Tutorium WS 2020`,
     siteUrl: `https://home.in.tum.de/~huangs`,
