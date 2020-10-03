@@ -2,8 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
@@ -20,16 +21,17 @@ const Tags = ({ pageContext, data, location }) => {
           const { title } = node.frontmatter
           return (
             <li key={slug}>
-              <Link to={slug}>{title}</Link>
+              <AniLink cover direction="left" to={slug}>
+                {title}
+              </AniLink>
             </li>
           )
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
+
+      <AniLink swipe direction="right" to="/tags">
+        All tags
+      </AniLink>
     </Layout>
   )
 }

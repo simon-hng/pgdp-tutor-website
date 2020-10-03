@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = props => {
   return (
@@ -17,15 +18,15 @@ const Header = props => {
       </label>
 
       <nav className="menu" role="navigation" aria-expanded="true">
-        <Link className="menu__item" to="/">
+        <AniLink fade className="menu__item" to="/">
           home
-        </Link>
-        <Link className="menu__item" to="/tags">
+        </AniLink>
+        <AniLink fade className="menu__item" to="/tags">
           tags
-        </Link>
-        <Link className="menu__item" to="/contact">
+        </AniLink>
+        <AniLink fade className="menu__item" to="/contact">
           contact
-        </Link>
+        </AniLink>
         <a className="menu__item" href="#" onClick={props.themeChange}>
           theme
         </a>

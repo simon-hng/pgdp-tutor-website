@@ -6,7 +6,8 @@ import kebabCase from "lodash/kebabCase"
 
 // Components
 import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 
 const TagsPage = ({
@@ -25,9 +26,13 @@ const TagsPage = ({
         <ul>
           {group.map(tag => (
             <li key={tag.fieldValue}>
-              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              <AniLink
+                swipe
+                direction="left"
+                to={`/tags/${kebabCase(tag.fieldValue)}/`}
+              >
                 {tag.fieldValue} ({tag.totalCount})
-              </Link>
+              </AniLink>
             </li>
           ))}
         </ul>
