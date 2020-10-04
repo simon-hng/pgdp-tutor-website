@@ -29,9 +29,11 @@ const Tags = ({ pageContext, data, location }) => {
         })}
       </ul>
 
-      <AniLink swipe direction="right" to="/tags">
-        All tags
-      </AniLink>
+      <p>
+        <AniLink className="tag__return" swipe direction="right" to="/tags">
+          ← All tags
+        </AniLink>
+      </p>
     </Layout>
   )
 }
