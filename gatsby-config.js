@@ -64,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `fullscreen`,
-        icon: `content/assets/simomns.svg`,
+        icon: `content/assets/simomns/simomns_icon.svg`,
         theme_color_in_head: false,
       },
     },

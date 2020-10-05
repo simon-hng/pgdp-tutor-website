@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Simomns from "../../content/assets/simomns_no_bg.svg"
+import Simomns from "../../content/assets/simomns/simomns_happy.svg"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`

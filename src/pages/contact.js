@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Simomns from "../../content/assets/simomns_no_bg.svg"
+import Simomns from "../../content/assets/simomns/simomns_happy.svg"
 
 const Contact = ({ location }) => {
   return (
