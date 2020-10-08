@@ -1,11 +1,14 @@
 import React from "react"
 import SimomnsEyes from "./eyes"
 import SimomnsMouth from "./mouth"
+import Hearts from "./hearts"
 
 class Simomns extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      love: false,
+      hearts: false,
       mouthIndex: 0,
       eyesIndex: 0,
     }
@@ -14,8 +17,10 @@ class Simomns extends React.Component {
   render() {
     const toggleExpression = () => {
       this.setState({
-        mouthIndex: Math.floor(Math.random() * 2),
-        eyesIndex: Math.floor(Math.random() * 3),
+        love: !this.state.love,
+        hearts: this.state.love,
+        mouthIndex: this.state.love ? 1 : 0,
+        eyesIndex: this.state.love ? 2 : 0,
       })
     }
 
@@ -26,6 +31,7 @@ class Simomns extends React.Component {
         onClick={toggleExpression}
         viewBox="0 0 396.96 214.03"
       >
+        <Hearts isShown={this.state.hearts} />
         <SimomnsEyes value={this.state.eyesIndex} />
         <SimomnsMouth value={this.state.mouthIndex} />
         <g id="simomns__ear">
