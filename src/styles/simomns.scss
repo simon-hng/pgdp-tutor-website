@@ -2,33 +2,9 @@
   margin-bottom: 5rem;
   width: 40rem;
   max-width: 100%;
-  fill: var(--fg);
   overflow: overlay;
 
-  &__hearts {
-    transform-origin: center;
-
-    &__heart {
-      fill: var(--pink);
-    }
-
-    &--visible {
-      opacity: 1;
-      animation: love 7s infinite;
-    }
-
-    opacity: 0;
-  }
-}
-
-@keyframes love {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(5);
-  }
-  100% {
-    transform: scale(1);
+  & path {
+    fill: var(--fg);
   }
 }
