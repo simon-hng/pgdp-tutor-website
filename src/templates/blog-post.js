@@ -57,19 +57,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <AniLink
-                swipe
-                direction="right"
-                to={previous.fields.slug}
-                rel="prev"
-              >
+              <AniLink direction="right" to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </AniLink>
             )}
           </li>
           <li>
             {next && (
-              <AniLink swipe direction="left" to={next.fields.slug} rel="next">
+              <AniLink direction="left" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </AniLink>
             )}
