@@ -19,27 +19,34 @@ First of all I would like you all to try this command: `$ tree /`
 
 > If you terminal says this:
 >
-> ```
+> ```bash
 > Command 'tree' not found, but can be installed with:
 >
 > sudo apt install tree
 > ```
 >
-> You just have to run `$ sudo apt install tree`
+> You just have to run
+>
+> ```bash
+> $ sudo apt install tree
+> ```
 
 _Gratulations, you just hacked the NSA_
 
-**What you are seeing is a visual representation of all your files on your linux system.**
+What you are seeing is a visual representation of all your files on your linux system.
 
 ### Let me explain with an example:
 
 Set up an example folder structure
 
-`$ mkdir mydir/folder{A,B,C/folderCA} -p && touch mydir/folder{A/fileA,B/fileB{B,A},C/folderCA/fileCAA}`
+```bash
+$ mkdir mydir/folder{A,B,C/folderCA} -p && touch mydir/folder{A/fileA,B/fileB{B,A},C/folderCA/fileCAA}
+```
 
 now run `$ tree mydir` and you should see the following:
 
 ```
+
 mydir/
 ├── folderA
 │   └── fileA
@@ -47,10 +54,11 @@ mydir/
 │   ├── fileBA
 │   └── fileBB
 └── folderC
-    └── folderCA
-        └── fileCAA
+└── folderCA
+└── fileCAA
 
 4 directories, 4 files
+
 ```
 
 Here is the same tree in the format used in the lecture:
@@ -67,7 +75,9 @@ the corresponding path would be `mydir/folderA/fileA`
 
 Let's write something in this file!
 
-`$ echo "Hello World!" > mydir/folderA/fileA`
+```bash
+$ echo "Hello World!" > mydir/folderA/fileA
+```
 
 ---
 
@@ -100,14 +110,14 @@ With the (slash) sign we tell the terminal from where we begin our path.
 You can now use all this knowledge about paths to navigate your filesystem
 with `cd` -> _(change directory)_ followed by a path you can change your present working directory.
 
-To enter your root path for example use `cd /`
+To enter your root path for example use `$ cd /`
 
 # What's next?
 
 Just cd around your file system and have a look around.
 You can also use a file explorer like `ranger` in order to more effectively browse your files.
 
-Install ranger: `sudo apt install ranger` then start it with `ranger` and try the `h j k l` keys.
+Install ranger: `$ sudo apt install ranger` then start it with `$ ranger` and try the `h j k l` keys.
 
 > `h j k l` are VI keybindings -> what is VI? -> DuckDuckGo is your friend
 
