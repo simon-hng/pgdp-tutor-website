@@ -34,6 +34,6 @@ you can still follow along and learn for yourself with your own pace.
 1. I promise that upcoming posts won't be as ugly as I will write a lot more code and less prose.
 1. Sorry for bad spelling but I am using vim and don't have a spellcheck plugin yet
 1. [Click the Simomns on the contact page](/contact)
+1. If something is written in _ialics_ its probably a dumb joke and you shouldn't take it seriously
 
 Hope to see you all soon and have fun stu**dying** :)
-
