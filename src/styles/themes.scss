@@ -28,6 +28,12 @@
   --hl: var(--white);
 }
 
+.halloween {
+  --bg: #000;
+  --fg: #c6c6c6;
+  --hl: #f90;
+}
+
 a {
   color: var(--hl);
 }
