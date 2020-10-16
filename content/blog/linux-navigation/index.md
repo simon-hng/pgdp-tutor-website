@@ -53,8 +53,7 @@ mydir/
 4 directories, 4 files
 ```
 
-To refer back to the lecture,
-here is the same tree in the format used in the lecture:
+Here is the same tree in the format used in the lecture:
 
 ![myDirTree](./fileTree01.jpg)
 
@@ -74,11 +73,11 @@ Let's write something in this file!
 
 How can you read what is written inside of this file?
 
-> Everthing writte in UPPERCASE means that it is a variable and different depending on your circumstances.
+> Everthing written in UPPERCASE is a variable and different depending on your circumstances.
 >
 > The command to see what is inside of a file is `cat PATH/TO/FILE`.
 
-## The terminal and present working directory
+## Relative paths and the present working directory (PWD)
 
 If you use `$ pwd` you can see your **present working directory**,
 which is the current path you are on.
@@ -94,12 +93,12 @@ With the (slash) sign we tell the terminal from where we begin our path.
 
 1. `~/` which means your home directory `/home/YOUR USER NAME`
 1. `./` which is your current directory `/PRESENT WORKING DIRECTORY`
-1. `../` which means one above your present working directory -> the directory that contains your PWD
+1. `../` which means the parent of your present working directory -> the directory that contains your PWD
 
-## How change your PWD
+## How to change your PWD
 
-You can use now all this information that you learned in order to navigate your filesystem.
-With `cd` -> _(change directory)_ followed by a path you can change your present working directory.
+You can now use all this knowledge about paths to navigate your filesystem
+with `cd` -> _(change directory)_ followed by a path you can change your present working directory.
 
 To enter your root path for example use `cd /`
 
@@ -110,7 +109,7 @@ You can also use a file explorer like `ranger` in order to more effectively brow
 
 Install ranger: `sudo apt install ranger` then start it with `ranger` and try the `h j k l` keys.
 
-> `h j k l` are VI keybindings -> google is your friend
+> `h j k l` are VI keybindings -> what is VI? -> DuckDuckGo is your friend
 
 You can quit with `q`
 
