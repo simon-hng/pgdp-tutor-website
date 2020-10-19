@@ -48,14 +48,14 @@ now run `$ tree mydir` and you should see the following:
 ```
 
 mydir/
-├── folderA
-│   └── fileA
-├── folderB
-│   ├── fileBA
-│   └── fileBB
-└── folderC
-└── folderCA
-└── fileCAA
+  ├── folderA
+  │   └── fileA
+  ├── folderB
+  │   ├── fileBA
+  │   └── fileBB
+  └── folderC
+      └── folderCA
+      └── fileCAA
 
 4 directories, 4 files
 
