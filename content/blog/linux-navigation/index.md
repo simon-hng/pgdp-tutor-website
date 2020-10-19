@@ -55,7 +55,7 @@ mydir/
   │   └── fileBB
   └── folderC
       └── folderCA
-      └── fileCAA
+          └── fileCAA
 
 4 directories, 4 files
 
