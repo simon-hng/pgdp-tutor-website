@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "./header"
 
-const themes = ["light", "dark", "pink", "halloween"]
+const themes = ["light", "dark", "pink"]
 const lastTheme =
   typeof window !== "undefined" && localStorage.getItem("colorTheme")
 let theme = lastTheme == null ? 0 : Number(lastTheme)
