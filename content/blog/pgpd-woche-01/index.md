@@ -45,8 +45,6 @@ If that does not work use the context menu at the top: `View -> Tool Windows -> 
 We only need to focus on the files in `src/pgdp/intro`.
 You should see a file called HelloWorld that you need to open.
 
-## Main methods
-
 ```Java
 //file: src/pgdp/intro/HelloWorld.java
 package pgdp.intro;
@@ -54,45 +52,38 @@ package pgdp.intro;
 import static pgdp.MiniJava.*;
 
 public class HelloWorld {
-  // highlight-next-line
   public static void main(String[] args) {
   }
 }
 ```
 
-I want you to ignore all except the highlighted line.
-What you see is a _main method_,
-which contains the code,
-that is actually run when you start your program.
+## Methods
 
-For this exercise you need to use a method.
+Think of methods as a boxex,
+that contains magic midgets.
 
-Think of methods as a box,
-which contains magic midgets.
+![Methods are boxes full of midgets](./methoden.jpg)
 
-**TODO Missing image**
-
-There might be holes in that box so that you can _pass_ something inside.
+There might be holes on one side of that box so that you can _pass_ something inside.
 When you give the midgets something to work with,
 thats called an argument.
 
+There might also be holes on the other side where somthing comes out,
+when something does that it is called the methods _return value_.
+
 Lets have a look at one of those magic midget boxes:
 
-```Java
-	public static void write(String output) {
-		System.out.println(output);
-	}
-```
+![Methods side effects](./methoden_side_effects.jpg)
 
 Every method has a method signature,
 that describes the form of the box,
-how many holes are there etc.
+how many holes there are, etc.
 
 ```Java
-	public static void write(String output) {
-//                ^Return type (void == no return)
-//                     ^Name
-//                           ^Argument types and names
+	void write(String output) {
+//  ^Return type (void == no return)
+//       ^Name
+//             ^Argument types and names
 		...
 	}
 ```
@@ -105,6 +96,18 @@ Inside the curly brackets is where you tell your midgets what they have to do.
 		System.out.println(output);
 	}
 ```
+
+### Main method
+
+There is one special method called main that looks like this:
+
+```Java
+public static void main (String args[]){
+  ...
+}
+```
+
+Which is the method that is actually run when we start our program.
 
 ## What do midgets have to do with our task?
 
@@ -154,9 +157,21 @@ When you run it with the green arrow to left you should see this:
 
 ### Abgabe
 
+General steps until your code is submitted
+
+1. git add -> stages your files to be commited
+1. git commit -> packages your changed files into a commit with a message (what do you call your package?)
+1. git push -> pushes your commit to the remote-repository, which is the artemis server
+
+In IntelliJ from the context menu:
+
+1. `ctrl-k` or `VCS->Commit...`
+1. Click on the files that you want to submit
+1. Arrow next to Commit button->`Commit and Push...`
+
 # P02 - Summieren
 
-Wie bei der Aufgabe oben die dateien holen und öffnen.
+See Exercise above to understand how to get your exercise-files.
 
 ```Java
 package pgdp.intro;
