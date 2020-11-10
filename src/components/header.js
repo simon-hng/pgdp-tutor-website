@@ -37,7 +37,7 @@ const Header = props => (
       <hr />
 
       <a className="menu__item" href="https://bbb.in.tum.de/sim-ttv-9a4">
-        Tutoring Fridays 16:00 to 19:00
+        Fridays 16:00 to 19:00
       </a>
     </nav>
   </header>
