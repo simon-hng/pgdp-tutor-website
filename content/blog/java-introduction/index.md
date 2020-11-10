@@ -99,10 +99,12 @@ Comparators are operators take two arguments and returns true or false depending
 
 Logic operators take two boolean arguments and return true or false depending on their mathematical definition
 
-| name | description | example                  |
-| :--- | :---------- | :----------------------- |
-| `&&` | and         | `true && true` -> `true` |
-| `    |             | `                        | or | `'a' == 'b'` -> `true` |
+| name      | description | example                  |
+| :-------- | :---------- | :----------------------- |
+| `&&`      | and         | `true && true` -> `true` |
+| see below | or          | `'a' == 'b'` -> `true`   |
+
+> or is `||` but I can't write it inside the table because it messes with my formatting :c
 
 ## Control flow
 
