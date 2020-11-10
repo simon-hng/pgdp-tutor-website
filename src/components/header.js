@@ -39,6 +39,10 @@ const Header = props => (
       <a className="menu__item" href="https://bbb.in.tum.de/sim-ttv-9a4">
         Fridays 16:00 to 19:00
       </a>
+
+      <a className="menu__item" href="https://pgdp.de/">
+        Tutorlist
+      </a>
     </nav>
   </header>
 )
