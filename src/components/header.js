@@ -33,6 +33,12 @@ const Header = props => (
       <a className="menu__item" href="#" onClick={props.themeChange}>
         theme
       </a>
+
+      <hr />
+
+      <a className="menu__item" href="https://bbb.in.tum.de/sim-ttv-9a4">
+        Tutoring Fridays 16:00 to 19:00
+      </a>
     </nav>
   </header>
 )
