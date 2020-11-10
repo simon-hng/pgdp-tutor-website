@@ -57,61 +57,7 @@ public class HelloWorld {
 }
 ```
 
-## Methods
-
-Think of methods as a boxex,
-that contains magic midgets.
-
-![Methods are boxes full of midgets](./methoden.jpg)
-
-There might be holes on one side of that box so that you can _pass_ something inside.
-When you give the midgets something to work with,
-thats called an argument.
-
-There might also be holes on the other side where somthing comes out,
-when something does that it is called the methods _return value_.
-
-Lets have a look at one of those magic midget boxes:
-
-![Methods side effects](./methoden_side_effects.jpg)
-
-Every method has a method signature,
-that describes the form of the box,
-how many holes there are, etc.
-
-```Java
-	void write(String output) {
-//  ^Return type (void == no return)
-//       ^Name
-//             ^Argument types and names
-		...
-	}
-```
-
-Inside the curly brackets is where you tell your midgets what they have to do.
-
-```Java
-	public static void write(String output) {
-    //highlight-next-line
-		System.out.println(output);
-	}
-```
-
-### Main method
-
-There is one special method called main that looks like this:
-
-```Java
-public static void main (String args[]){
-  ...
-}
-```
-
-Which is the method that is actually run when we start our program.
-
-## What do midgets have to do with our task?
-
-Good question!
+# Our task
 
 Our task is to print out the String "Hallo Welt!",
 so what does that mean?
