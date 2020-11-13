@@ -101,7 +101,7 @@ public class HelloWorld {
 When you run it with the green arrow to left you should see this:
 `Hallo Welt!`
 
-### Abgabe
+### Submit your code
 
 General steps until your code is submitted
 
@@ -115,11 +115,14 @@ In IntelliJ from the context menu:
 1. Click on the files that you want to submit
 1. Arrow next to Commit button->`Commit and Push...`
 
+> Only your last submission is evaluated!
+
 # P02 - Summieren
 
 See Exercise above to understand how to get your exercise-files.
 
 ```Java
+//file: src/pgdp/intro/Sum.java
 package pgdp.intro;
 
 import static pgdp.MiniJava.*;

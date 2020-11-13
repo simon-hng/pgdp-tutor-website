@@ -50,16 +50,16 @@ those are the most basic data types.
 | name   | description                       | example |
 | :----- | :-------------------------------- | :------ |
 | `bool` | `true` or `false`                 | `true`  |
-| `char` | Unicode characters (letters ,etc) | 'a'     |
+| `char` | Unicode characters (letters ,etc) | `'a'`   |
 
 ## Strings
 
 Strings are not primitive data types but instead an array of characters,
 because we are using Java and OOP Strings are implemented as a class.
 
-| name     | description                   | example        |
-| :------- | :---------------------------- | :------------- |
-| `String` | A String of characters (text) | "Hello World!" |
+| name     | description                   | example          |
+| :------- | :---------------------------- | :--------------- |
+| `String` | A String of characters (text) | `"Hello World!"` |
 
 ## Arrays
 
@@ -80,7 +80,7 @@ second: `nums[1]`, etc
 | :--- | :-------------------------------------------- | :---------------------------------------- |
 | `=`  | Assignment                                    | `boolean var = true;`                     |
 | `+`  | Addition (could also be String concatenation) | `"Hello" + " World!"` -> `"Hello World!"` |
-| `-`  | Substractions                                 | `1 - 0` -> `0`                            |
+| `-`  | Substractions                                 | `1 - 0` -> `1`                            |
 
 ## Comparators
 
@@ -99,10 +99,10 @@ Comparators are operators take two arguments and returns true or false depending
 
 Logic operators take two boolean arguments and return true or false depending on their mathematical definition
 
-| name      | description | example                  |
-| :-------- | :---------- | :----------------------- |
-| `&&`      | and         | `true && true` -> `true` |
-| see below | or          | `'a' == 'b'` -> `true`   |
+| name      | description | example                   |
+| :-------- | :---------- | :------------------------ |
+| `&&`      | and         | `true && true` -> `true`  |
+| see below | or          | `false or true` -> `true` |
 
 > or is `||` but I can't write it inside the table because it messes with my formatting :c
 
@@ -124,9 +124,9 @@ if (condition) {
 
 ```Java
 if (condition) {
-  //do something
+  //do this if condition is true
 } else {
-  //do something else
+  //do this if condition is false
 }
 ```
 
@@ -134,7 +134,7 @@ if (condition) {
 
 ```Java
 while (condition) {
-  //repeats what is written here until condition is false
+  //repeats statements here until condition is false
 }
 ```
 
